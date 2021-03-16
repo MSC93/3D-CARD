@@ -1,0 +1,127 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-space {
+  padding: 0rem 1rem 0rem 1rem;
+}
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.pikachu {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pikachu img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(
+    to right,
+    rgba(246, 250, 33, 0.836),
+    rgba(255, 20, 20, 0.808)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 1.5rem;
+  padding: 2rem 0rem 0.5rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.sizes p {
+  font-size: 1.5rem;
+  font-weight: ;
+  color: #585858;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.span-i {
+  font-weight: 700;
+}
+
+.sizes button {
+  padding: 0.5rem 1.3rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+button.active {
+  background: #30a7d7;
+  color: white;
+}
+
+button.active2 {
+  background: #bbbbbb;
+  color: white;
+}
+.site {
+  margin-top: 2.5rem;
+  transition: all 0.75s ease-out;
+}
+.site button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f9eb46;
+  border: none;
+  color: rgb(60, 60, 60);
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
